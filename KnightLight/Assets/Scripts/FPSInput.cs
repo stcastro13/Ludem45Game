@@ -46,8 +46,8 @@ public class FPSInput : MonoBehaviour
             Vector3 inputdirection = Vector3.zero;
             //float deltaX = Input.GetAxis("LeftJoystickHorizontal") * speed;
             //float deltaZ = Input.GetAxis("LeftJoystickVertical") * speed;
-            inputdirection.x = Input.GetAxis("LeftJoystickHorizontal")*speed;
-            inputdirection.z = Input.GetAxis("LeftJoystickVertical")*speed;
+            inputdirection.x = Input.GetAxis("Horizontal")*speed;
+            inputdirection.z = Input.GetAxis("Vertical")*speed;
             // ani.SetFloat("Game", 1);
             if (inputdirection.x < 1f && inputdirection.x > -1f)
             {
